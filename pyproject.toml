@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=72"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "NYPD_final_project"
+version = "0.0.1"
+description = "This package is made to calculate statistics about fire events and alcohol companies in the population."
+authors = [
+    { name = "Antoni Rosiecki", email = "a.rosiecki@student.uw.edu.pl"}
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "spicy"
+]
+
+[project.license]
+text = "BSD 3-Clause"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
