@@ -17,3 +17,16 @@ To install and run this project locally, clone the repository and install it via
 git clone [https://github.com/antoniros/python-data-tools.git] (https://github.com/antoniros/python-data-tools.git)
 cd python-data-tools
 pip install .
+```
+
+## 📊 Usage
+
+**Option 1: View the Analysis**
+Run the included Jupyter Notebook to see the complete study, statistical results, and visualizations:
+
+```bash
+jupyter notebook fire_and_alcohol_study.ipynb
+```
+
+**Option 2: Write Your Own Script**
+Since the package is installed in your environment, you can directly import its modules into your own Python scripts to run custom analyses on new data!
