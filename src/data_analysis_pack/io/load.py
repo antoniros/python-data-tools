@@ -46,7 +46,7 @@ def load_and_preprocess_population(import_file, name_of_sheet, rows_to_skip, ind
     # already grouped by powiat, cleaning empty rows from Excel
     # results in 380 rows, which is the number of powiats in Poland
     # but there are 10 pairs of powiats with the same name,
-    # it's possible to differenciate them, but it's honestly a bit too hard
+    # it's possible to differenciate them, but it's not in the scope of this project
     # so I will just get rid of all 20 of them
     data = pd.read_excel(import_file, sheet_name=name_of_sheet, skiprows=rows_to_skip, index_col=index_column)
     data = data[['Województwa \nVoivodships \nPowiaty \nPowiats', 'Identyfikator terytorialny\nCode', 'Ogółem \nTotal',
@@ -62,7 +62,7 @@ def load_and_preprocess_population(import_file, name_of_sheet, rows_to_skip, ind
 
 
 def join_datasets(alco_data, fire_events_data, population_data):
-    # only population has all powiats (as not every powiat had an alcohol company or a fire event)
+    # only population has all powiats (as not every powiat has to have an alcohol company or a fire event)
     # during the merge I'll fill the missing values with zeros as there were no companies or events
     # additionaly population data has Warsaw saved as M. St. Warszawa instead of Warszawa
     result = pd.merge(population_data, alco_data, on='Powiat', how='left')
