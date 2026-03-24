@@ -1,19 +1,19 @@
 # Polish Population, Fire Events & Alcohol Consumption Analysis
 
-This project is a Python data analysis package for calculating statistics related to:
+A Python data analysis package designed to calculate, analyze, and visualize statistics correlating the Polish population, fire incidents, and alcohol-selling companies.
 
-- The Polish population  
-- Fire incidents in Poland  
-- Alcohol selling companies in Poland  
+## 🚀 Key Features
 
-## This repo includes:
+* **Software Engineering Best Practices:** Configured with a `pyproject.toml` file, making the entire package `pip installable`.
+* **Tested & Profiled:** Includes comprehensive unit tests for all core functions and performance profiling results to ensure optimized code execution.
+* **Modular Data Handling:** Features a dedicated `data/` directory, allowing users to easily swap in the most recent datasets without breaking the code.
+* **Interactive Analysis:** Includes a detailed Jupyter Notebook (`fire_and_alcohol_study.ipynb`) containing the full Exploratory Data Analysis (EDA) and visualizations.
 
-- Easy data change in the dedicated `data/` folder, allowing users to swich data for the most recent datasets.
-- `Jupyter Notebook` containing results and visualizations of the analysis.  
-- `Tests` for all functions in the package.  
-- Performance `profiling` results to help understand and optimize the code.  
-- `pyproject.toml` file the allows the package to be `pip installable`  
+## 🛠️ Installation
 
-## Usage:
+To install and run this project locally, clone the repository and install it via pip:
 
-- Run the fire_and_alcohol_study.ipynb to run the analysis or download the package and write your own script!
+```bash
+git clone [https://github.com/antoniros/python-data-tools.git] (https://github.com/antoniros/python-data-tools.git)
+cd python-data-tools
+pip install .
