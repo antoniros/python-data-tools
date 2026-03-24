@@ -14,7 +14,7 @@ A Python data analysis package designed to calculate, analyze, and visualize sta
 To install and run this project locally, clone the repository and install it via pip:
 
 ```bash
-git clone [https://github.com/antoniros/python-data-tools.git] (https://github.com/antoniros/python-data-tools.git)
+git clone git clone https://github.com/antoniros/python-data-tools.git
 cd python-data-tools
 pip install .
 ```
